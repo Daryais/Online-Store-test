@@ -1,1 +1,31 @@
+---
+- summary: |
+    Не работает добавление товара в корзину
+  environment: |
+    Yandex 24.1.5.825 (64-bit)
+    macOS Monterey 12.7
+  steps-to-reproduce: |
+    1. Зайти на главную страницу магазина 
+    2. Нажать кнопку "В корзину" на товаре
+    3. Перейти в корзину
+  expected-result: |
+    Товар добавляется в корзину и отоброжается корректно 
+  actual-result: |
+    Товар не добавляется в корзину и не отображается. 
 
+- summary: |
+    Изменяется url в адресной строке браузера, не работают вкладки LOBBY/TOURNAMENT/COMPLETED GAMES
+  environment: |
+    Google Chrome	107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Linux
+  steps-to-reproduce: |
+    1. Залогиниться в системе https://codebattle.hexlet.io/session/new?locale=en&next=%2F
+    2. Переключить Лидерборд по сроку (месяц/неделя/за все время)
+    3. Переключить LOBBY/TOURNAMENT/COMPLETED GAMES
+  expected-result: |
+    url в адресной строке не меняется
+    Вкладки работают
+  actual-result: |
+    При нажатии на week,month,all в urlHash появляется '!'
+    Вкладки не работают.
+    Ошибка изображена на скриншоте assets/bug.png
