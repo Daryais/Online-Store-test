@@ -1,48 +1,54 @@
 - summary: |
     Проверка работы поиска по сайту
- status: fail
+status: fail
 
 - summary: |
     Проверка работы фильтров по категориям
-  status: pass
+status: pass
 
 - summary: |
     Проверка работы фильтра по цене
-  status: pass
+status: pass
 
 - summary: |
     Проверка работы фильтров по брендам
-  status: pass
+status: pass
 
 - summary: |
     Проверка добавления товаров в корзину 
-  status: pass
+status: pass
 
 - summary: |
     Проверка удаления товара из корзины 
-  status: pass
+status: pass
 
 - summary: |
     Проверка оформления заказа  
-  status: fail
+status: fail
 
 - summary: |
     Проверка переключения языка сайта  
-  status: fail
+status: fail
 
 - summary: |
     Проверка возможности перейти на страницу товара  
-  status: pass
+status: pass
 
 - summary: |
     Проверка работы кнопок для перелистывания страниц каталога товаров  
-  status: fail
+status: fail
 
 - summary: |
     Проверка функции удаления товаров из корзины после оформления заказа   
-  status: fail
+status: fail
 
 - summary: |
     Проверка форм ввода на xss-уязвимость
 status: pass
  
+- summary: |
+    Проверка перехода к категории по клику на хэштег
+status: fail
+
+
+  
