@@ -1,7 +1,7 @@
 ---
 - summary: |
     Проверка работы поиска по сайту
- status: fail
+  status: fail
 
 - summary: |
     Проверка работы фильтров по категориям
@@ -13,49 +13,49 @@
 
 - summary: |
     Проверка работы фильтров по брендам
-status: pass
+  status: pass
 
 - summary: |
     Проверка добавления товаров в корзину 
-status: pass
+  status: pass
 
 - summary: |
     Проверка удаления товара из корзины 
-status: pass
+  status: pass
 
 - summary: |
     Проверка оформления заказа  
-status: fail
+  status: fail
 
 - summary: |
     Проверка переключения языка сайта  
-status: fail
+  status: fail
 
 - summary: |
     Проверка возможности перейти на страницу товара  
-status: pass
+  status: pass
 
 - summary: |
     Проверка работы кнопок для перелистывания страниц каталога товаров  
-status: fail
+  status: fail
 
 - summary: |
     Проверка функции удаления товаров из корзины после оформления заказа   
-status: fail
+  status: fail
 
 - summary: |
     Проверка форм ввода на xss-уязвимость
-status: pass
+  status: pass
 
 - summary: |
     Проверка перехода к категории по клику на хэштег
-status: pass
+  status: pass
 
 - summary: |
     Проверка сайта на адаптивность к мобильным устройствам
-status: pass
-
-bugreports:
+  status: pass
+ 
+- bugreports:
   - summary: |
       Язык переключается на "English" после перехода из корзины на главную страницу магазина
     environment: |
@@ -97,9 +97,9 @@ bugreports:
 
 - summary: |
       Переход на главную страницу магазина возвращает в корзину ранее удаленные товары 
-    environment: |
+  environment: |
       Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
-    steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Зайти на главную страницу магазина 
     2. Добавить товар в корзину
     3. Нажать на кнопку "Корзина"
@@ -107,5 +107,5 @@ bugreports:
     5. Нажать на кнопку "Магазин"
     expected-result: |
       Открывается главная страница магазина, корзина пуста  
-    actual-result: |
+  actual-result: |
       Открывается главная страница магазина, ранее удаленные товары возвращаются в корзину
