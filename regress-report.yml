@@ -56,7 +56,7 @@ test-cases:
       Проверка сайта на адаптивность к мобильным устройствам
     status: pass
  
-   bugreports: 
+ bugreports:
    - summary: |
        Язык переключается на "English" после перехода из корзины на главную страницу магазина
      environment: |
@@ -67,12 +67,12 @@ test-cases:
        - Выбрать язык "Russian"
        - Нажать на кнопку "Корзина"
        - Нажать на кнопку "Магазин"
-     expected-result: |
-       Язык сайта не должен меняться 
-     actual-result: |
-       Язык сайта меняется на "English"
+      expected-result: |
+        Язык сайта не должен меняться 
+      actual-result: |
+        Язык сайта меняется на "English"
       
-  - summary: |
+   - summary: |
       Проверка работы фильтра по цене 
     environment: |
       Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
