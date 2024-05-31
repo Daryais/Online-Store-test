@@ -2,47 +2,47 @@
 test-cases:
   - summary: |
       Проверка работы поиска по сайту
-  status: fail
+    status: fail
 
   - summary: |
       Проверка работы фильтров по категориям
-  status: pass
+    status: pass
 
   - summary: |
       Проверка работы фильтра по цене
-  status: fail
+    status: fail
 
   - summary: |
       Проверка работы фильтров по брендам
-  status: pass
+    status: pass
 
   - summary: |
       Проверка добавления товаров в корзину 
-  status: pass
+    status: pass
 
   - summary: |
       Проверка удаления товара из корзины 
-  status: pass
+    status: pass
 
   - summary: |
       Проверка оформления заказа  
-  status: fail
+    status: fail
 
   - summary: |
       Проверка переключения языка сайта  
-  status: fail
+    status: fail
 
   - summary: |
       Проверка возможности перейти на страницу товара  
-  status: pass
+    status: pass
 
   - summary: |
       Проверка работы кнопок для перелистывания страниц каталога товаров  
-  status: fail
+    status: fail
 
  - summary: |
-      Проверка функции удаления товаров из корзины после оформления заказа   
-  status: fail
+     Проверка функции удаления товаров из корзины после оформления заказа   
+   status: fail
 
 - summary: |
     Проверка форм ввода на xss-уязвимость
