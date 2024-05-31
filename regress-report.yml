@@ -1,78 +1,78 @@
 ---
-- summary: |
+test-cases:
+  - summary: |
     Проверка работы поиска по сайту
   status: fail
 
-- summary: |
+  - summary: |
     Проверка работы фильтров по категориям
   status: pass
 
-- summary: |
+  - summary: |
     Проверка работы фильтра по цене
   status: fail
 
-- summary: |
+  - summary: |
     Проверка работы фильтров по брендам
   status: pass
 
-- summary: |
+  - summary: |
     Проверка добавления товаров в корзину 
   status: pass
 
-- summary: |
+  - summary: |
     Проверка удаления товара из корзины 
   status: pass
 
-- summary: |
+  - summary: |
     Проверка оформления заказа  
   status: fail
 
-- summary: |
+  - summary: |
     Проверка переключения языка сайта  
   status: fail
 
-- summary: |
+  - summary: |
     Проверка возможности перейти на страницу товара  
   status: pass
 
-- summary: |
+  - summary: |
     Проверка работы кнопок для перелистывания страниц каталога товаров  
   status: fail
 
-- summary: |
+ - summary: |
     Проверка функции удаления товаров из корзины после оформления заказа   
   status: fail
 
-- summary: |
+  - summary: |
     Проверка форм ввода на xss-уязвимость
   status: pass
 
-- summary: |
+  - summary: |
     Проверка перехода к категории по клику на хэштег
   status: pass
 
-- summary: |
+  - summary: |
     Проверка сайта на адаптивность к мобильным устройствам
   status: pass
  
-- bugreports: 
-- summary: |
-    Язык переключается на "English" после перехода из корзины на главную
-    страницу магазина
-  environment: |
-    Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
-  steps-to-reproduce: |
+ bugreports: 
+   - summary: |
+       Язык переключается на "English" после перехода из корзины на главную страницу магазина
+     environment: |
+       Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
+     steps-to-reproduce: |
     - Зайти на главную страницу магазина 
     - Нажать кнопку "Language" на товаре
     - Выбрать язык "Russian"
     - Нажать на кнопку "Корзина"
     - Нажать на кнопку "Магазин"
-    expected-result: |
+     expected-result: |
       Язык сайта не должен меняться 
-    actual-result: |
+     actual-result: |
       Язык сайта меняется на "English"
       
-- summary: |
+  - summary: |
     Проверка работы фильтра по цене 
   environment: |
     Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
