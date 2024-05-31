@@ -56,7 +56,7 @@
   status: pass
  
 - bugreports:
-  - summary: |
+- summary: |
       Язык переключается на "English" после перехода из корзины на главную страницу магазина
     environment: |
       Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
@@ -71,7 +71,7 @@
     actual-result: |
       Язык сайта меняется на "English"
 
-  - summary: |
+- summary: |
       Проверка работы фильтра по цене 
     environment: |
       Google Chrome Версия 125.0.6422.77 (Официальная сборка), (64 бит)
