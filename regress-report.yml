@@ -56,7 +56,7 @@ test-cases:
       Проверка сайта на адаптивность к мобильным устройствам
     status: pass
  
- bugreports: 
+  bugreports: 
    - summary: |
        Язык переключается на "English" после перехода из корзины на главную страницу магазина
      environment: |
